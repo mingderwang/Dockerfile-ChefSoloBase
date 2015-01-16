@@ -1,9 +1,9 @@
-## 使い方
+## Usage
 
-authorized_keys を自分の公開鍵に置き換える。
+Replace authorized_keys to your public key.
 
     $ cp ~/.ssh/authorized_keys ./authorized_keys
-    $ docker build . -t marcie001/chefbase
+    $ docker build -t marcie001/chefbase .
     $ docker run -d marcie001/chefbase
 
-`knife solo bootstrap foo` とかで Chef solo を実行する。
+`knife solo bootstrap foo` to run chef-solo
